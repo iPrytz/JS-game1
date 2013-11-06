@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+	<h1>Rock Paper Scissors</h1>
+
+
+	<div id = "main">
+
+		<div id="textWL"></div>
+		<div id="newGame">Do you want to start a new game? <br/>
+			<span>Yes</span> / <span>No</span></div>
+
+			<div id="game">
+
+
+				<div id="player">
+					<div class ="meter" id="playerLife"><span id="playerMeter"></span></div>
+					<div id="playerHand">
+						<img src="./img/rock.png" alt="player" id="playerImg"></img>
+					</div>
+					<div id="playerButton">
+
+						<img src="./img/rock_button.png" alt="rock" id="rockButton"></img>
+						<img src="./img/paper_button.png" alt="paper" id="paperButton"></img>
+						<img src="./img/scissors_button.png" alt="scissors" id="scissorsButton"></img>
+					</div>
+
+				</div>
+				<div id="cpu">			
+					<div class="meter red" id="cpuLife"><span id="cpuMeter"></span></div>
+
+					<div id="cpuHand">
+
+						<img src="./img/rock.png" alt="player" id="cpuImg"></img>
+
+					</div>
+
+					<div id="newBgDiv">
+						<img src="./img/refresh_bg.png" alt="New BG" id="newBg">
+
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+		</div>
+
+<audio id="gameWin" src="fx/mk_laugh.mp3"></audio>
+
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="js/ion.sound.min.js"></script>
+		<script src="js/rpsGame.js"></script>
+		<script src="js/rpsGame.logic.js"></script>
+		<script src="js/rpsGame.ui.js"></script>
+		<script src="js/rpsGame.play.js"></script>
+
+
+
+
+
+
+	</body>
+	</html>
